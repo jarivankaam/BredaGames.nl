@@ -12,6 +12,11 @@ class ImageStoreController extends Controller
     public function uploadImage(Request $request)
     {
         $image =  $request->image;
+        $firstname = $request->firstname;
+        $surname = $request->surname;
+        $email = $request->email;
+        $phone = $request->phone;
+        $comments = $request->comments;
         $path = $image->store('public');
         $part1 = substr($path, 6);
 
@@ -22,11 +27,11 @@ class ImageStoreController extends Controller
 //        DB::insert('insert into gamestable (gameImagePath) values (?)', array($path));
         $data=array(
              'gameImagePath' => $loc,
-            'firstname' => 'Rolf',
-            'surname' => 'breda',
-            'email' => 'rolf@bredagames-demo.nl',
-            'phone' => '06 31 123456',
-            'comments' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet'
+            'firstname' => $firstname,
+            'surname' => $surname,
+            'email' => $email,
+            'phone' => $phone,
+            'comments' => $comments
     );
 
         DB::table('gamestable')->insert($data);
