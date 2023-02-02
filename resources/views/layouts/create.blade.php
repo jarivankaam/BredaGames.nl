@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Solitreo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />   <!-- Styles -->
+
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
     <script defer src="{{ asset('/js/app.js') }}"></script>
     <!-- Scripts -->
@@ -19,12 +20,12 @@
 <body>
 <div class="section-header flex justify-content-center align-items-center" id="myHeader">
     <ul class="flex justify-content-around align-items-center">
-        <li><a href="/overview">Add Image</a></li>
-        <li><h2 class="font Size64 family title"><a href="/">ImageApi</a></h2></li>
-        <li><a href="/dashboard">dashboard</a></li>
+        <li><a href="/create" class="flex justify-content-center align-items-center flex-column font size22 family title"><i class="fa-solid fa-file-arrow-up"></i>Stuur game in</a></li>
+        <li><a href="/"><img src="{{ asset('/images/logo.png') }}" alt=""></a></li>
+
     </ul>
 </div>
-<section class="flex justify-content-center align-items-center">@yield('content')</section>
 
+<section class="flex justify-content-center align-items-center">@yield('content')</section>
 </body>
 </html>
