@@ -18,15 +18,18 @@
     <!-- Scripts -->
 </head>
 <body>
-<div class="section-header flex justify-content-center align-items-center" id="myHeader">
+<section id="site-header" class="section-header flex justify-content-center align-items-center">
     <ul class="flex justify-content-around align-items-center">
         <li><a href="/create" class="flex justify-content-center align-items-center flex-column font size22 family title"><i class="fa-solid fa-file-arrow-up"></i>Stuur game in</a></li>
         <li><a href="/"><img src="{{ asset('/images/logo.png') }}" alt=""></a></li>
 
     </ul>
-</div>
+</section>
 
 @yield('hero')
 @yield('usps')
+@yield('text-media')
+@yield('action-banner')
+@yield('footer')
 </body>
 </html>

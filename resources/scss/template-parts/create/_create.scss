@@ -1,0 +1,17 @@
+.section-create {
+    input {
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        &#comments {
+            padding: 50px;
+        }
+        &#image {
+            border: 1px solid black;
+            padding: 40px;
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+}

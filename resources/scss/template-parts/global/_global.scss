@@ -1,0 +1,14 @@
+.button{
+    &.cta {
+        a {
+            background-color: $maincolor;
+            padding: 20px 40px;
+            color: black;
+        }
+        input {
+            padding: 20px 50px;
+            border:none;
+            background-color: $maincolor;
+        }
+    }
+}

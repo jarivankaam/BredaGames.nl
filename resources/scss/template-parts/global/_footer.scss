@@ -1,0 +1,33 @@
+.section-footer {
+    background: black;
+    bottom: 0;
+    width: 100%;
+    border-top: 20px solid $darkcolor;
+    padding: 50px;
+    z-index: -1;
+    margin-top: 0;
+    margin-bottom: 0;
+    p {
+        color: white;
+
+        i{
+            padding-right: 10px;
+        }
+    }
+    .container {
+        justify-content: space-between;
+        width: 100%;
+    }
+    img {
+        object-fit: contain;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .section-footer {
+        img{
+            display: none;
+        }
+    }
+}
